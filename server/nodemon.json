@@ -1,0 +1,6 @@
+{
+    "watch": ["./**/*.js"],
+    "ignore": ["./package.json", "./package-lock.json"],
+    "ext": "js,json",
+    "exec": "node ./src/index.js"
+}
