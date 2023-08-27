@@ -10,7 +10,7 @@ const DeviceItem = ({device}) => {
     return (
         <Col md={3} className={"mt-4"} onClick={() => navigation(`${DEVICE_ROUTE}/${device.id}`)}>
             <Card style={{width: 150, cursor: "pointer"}} border={"light"}>
-                <Image height={150} width={150} src={device.img}/>
+                <Image height={150} width={150} src={process.env.REACT_APP_DEV_BASE_URL + device.img}/>
                 <div className="text-black-50 d-flex justify-content-between align-items-center mt-2">
                     <div>Samsung...</div>
                     <div className='d-flex align-items-center'>
