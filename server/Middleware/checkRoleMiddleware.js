@@ -9,7 +9,7 @@ module.exports = (role) => {
         try {
             const token = req.headers.authorization.split(" ")[1];
             if (!token) {
-                return res.status(401).json({message: "User does not authorize"})
+                return res.status(401).json({message: "User does not authorize1"})
             }
 
             const decode = jwt.verify(token, process.env.SECRET_KEY)
